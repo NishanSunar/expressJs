@@ -3,6 +3,6 @@ const app = express()
 
 app.set('view engine','ejs')
 app.get("/",(req, resp)=>{
-    resp.render('home')
+    resp.render('home', {name:"Nishan sunar",age:20})
 })
 app.listen(3200)
